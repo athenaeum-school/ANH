@@ -22,27 +22,27 @@ namespace Assets.Code.States{
 			
 			if(Input.GetKeyDown(KeyCode.F1)){
 				Debug.Log("図鑑1をアンロック");
-				bookmanager.pet1lock = true;
+				bookmanager.MonsterLock[0] = true;
 			}
 			if(Input.GetKeyDown(KeyCode.F2)){
 				Debug.Log("図鑑2をアンロック");
-				bookmanager.pet2lock = true;
+				bookmanager.MonsterLock[1] = true;
 			}
 			if(Input.GetKeyDown(KeyCode.F3)){
 				Debug.Log("図鑑3をアンロック");
-				bookmanager.pet3lock = true;
+				bookmanager.MonsterLock[2] = true;
 			}
 			if(Input.GetKeyDown(KeyCode.F4)){
 				Debug.Log("図鑑4をアンロック");
-				bookmanager.pet4lock = true;
+				bookmanager.MonsterLock[3] = true;
 			}
 			if(Input.GetKeyDown(KeyCode.F5)){
 				Debug.Log("図鑑5をアンロック");
-				bookmanager.pet5lock = true;
+				bookmanager.MonsterLock[4] = true;
 			}
 			if(Input.GetKeyDown(KeyCode.F6)){
 				Debug.Log("図鑑6をアンロック");
-				bookmanager.pet6lock = true;
+				bookmanager.MonsterLock[5] = true;
 			}
 		}
 		
@@ -50,84 +50,84 @@ namespace Assets.Code.States{
 			GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height),
 			                bookmanager.BookBackgroundTex,
 			                ScaleMode.StretchToFill);
-			if(bookmanager.pet1lock){
+			if(bookmanager.MonsterLock[0]){
 				if(GUI.Button(new Rect((Screen.width/10)*1,(Screen.height/10)*2,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
-				              bookmanager.pet1tex)){
+				              bookmanager.MonsterTex[0])){
 					bookmanager.StateChange(new Pet1Explanation(bookmanager));
 				}
 			}
-			else if(!bookmanager.pet1lock){	
+			else if(!bookmanager.MonsterLock[0]){	
 				if(GUI.Button(new Rect((Screen.width/10)*1,(Screen.height/10)*2,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				              bookmanager.unlockTex)){
 				}
 			}
 			
-			if(bookmanager.pet2lock){
+			if(bookmanager.MonsterLock[1]){
 				if(GUI.Button(new Rect((Screen.width/10)*4,(Screen.height/10)*2,
 			                       (Screen.width/10)*2,(Screen.height/10)*2),
-			              bookmanager.pet2tex)){
+			              bookmanager.MonsterTex[1])){
 					bookmanager.StateChange(new Pet2Explanation(bookmanager));
 				}
 			}
-			else if(!bookmanager.pet2lock){	
+			else if(!bookmanager.MonsterLock[1]){	
 				if(GUI.Button(new Rect((Screen.width/10)*4,(Screen.height/10)*2,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				              bookmanager.unlockTex)){
 				}
 			}
 
-			if(bookmanager.pet3lock){
+			if(bookmanager.MonsterLock[2]){
 				if(GUI.Button(new Rect((Screen.width/10)*7,(Screen.height/10)*2,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
-				                   bookmanager.pet3tex)){
+				                   bookmanager.MonsterTex[2])){
 					bookmanager.StateChange(new Pet3Explanation(bookmanager));
 				}
 			}
-			else if(!bookmanager.pet3lock){	
+			else if(!bookmanager.MonsterLock[2]){	
 				if(GUI.Button(new Rect((Screen.width/10)*7,(Screen.height/10)*2,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				              bookmanager.unlockTex)){
 				}
 			}
 			
-			if(bookmanager.pet4lock){
+			if(bookmanager.MonsterLock[3]){
 				if(GUI.Button(new Rect((Screen.width/10)*1,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
-				                   bookmanager.pet4tex)){
+				                   bookmanager.MonsterTex[3])){
 					bookmanager.StateChange(new Pet4Explanation(bookmanager));
 				}
 			}
-			else if(!bookmanager.pet4lock){	
+			else if(!bookmanager.MonsterLock[3]){	
 				if(GUI.Button(new Rect((Screen.width/10)*1,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				              bookmanager.unlockTex)){
 				}
 			}
 			
-			if(bookmanager.pet5lock){
+			if(bookmanager.MonsterLock[4]){
 				if(GUI.Button(new Rect((Screen.width/10)*4,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
-				                   bookmanager.pet5tex)){
+				                   bookmanager.MonsterTex[4])){
 					bookmanager.StateChange(new Pet5Explanation(bookmanager));
 				}
 			}
-			else if(!bookmanager.pet5lock){	
+			else if(!bookmanager.MonsterLock[4]){	
 				if(GUI.Button(new Rect((Screen.width/10)*4,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				              bookmanager.unlockTex)){
 				}
 			}
 
-			if(bookmanager.pet6lock){
+			if(bookmanager.MonsterLock[5]){
 				if(GUI.Button(new Rect((Screen.width/10)*7,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
-				                   bookmanager.pet6tex)){
+				                   bookmanager.MonsterTex[5])){
 					bookmanager.StateChange(new Pet6Explanation(bookmanager));
 				}
 			}
-			else if(!bookmanager.pet6lock){	
+			else if(!bookmanager.MonsterLock[5]){	
 				if(GUI.Button(new Rect((Screen.width/10)*7,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				              bookmanager.unlockTex)){

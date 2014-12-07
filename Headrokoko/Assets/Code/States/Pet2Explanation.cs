@@ -21,7 +21,7 @@ namespace Assets.Code.States{
 		
 		public void Render(){
 			GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height),
-			                bookmanager.pet2texExplanation,
+			                bookmanager.MonsterExplanation[1],
 			                ScaleMode.StretchToFill);
 			if(GUI.Button(new Rect((Screen.width/10)*8,(Screen.height/10)*9,
 			                            (Screen.width/10)*2,(Screen.height/10)*1),
