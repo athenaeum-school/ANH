@@ -1,15 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Scripts\Interaction\UIButtonSound.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Examples\Scripts\Other\DragDropSurface.cs">
     <Files>
       <File FileName="Assets\NGUI\Examples\Scripts\Other\ChatInput.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\drag.cs" Line="1" Column="1" />
-      <File FileName="Assets\NGUI\Examples\Scripts\Other\DragDropItem.cs" Line="1" Column="1" />
-      <File FileName="Assets\NGUI\Examples\Scripts\Other\DragDropSurface.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Examples\Scripts\Other\DragDropItem.cs" Line="49" Column="31" />
+      <File FileName="Assets\NGUI\Examples\Scripts\Other\DragDropSurface.cs" Line="30" Column="18" />
       <File FileName="Assets\NGUI\Scripts\Interaction\UICheckboxControlledComponent.cs" Line="1" Column="1" />
       <File FileName="Assets\NGUI\Scripts\UI\UIInputSaved.cs" Line="1" Column="1" />
       <File FileName="Assets\NGUI\Scripts\UI\UIInput.cs" Line="1" Column="1" />
-      <File FileName="Assets\NGUI\Scripts\Interaction\UIButtonSound.cs" Line="43" Column="3" />
+      <File FileName="Assets\NGUI\Scripts\Interaction\UIButtonSound.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
