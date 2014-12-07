@@ -30,6 +30,14 @@ namespace Assets.Code.States{
 				Debug.Log("図鑑画面に遷移");
 				bookmanager.StateChange(new BookState(bookmanager));
 			}
+
+			else if(GUI.Button(new Rect((Screen.width/10)*1,(Screen.height/10)*8,
+			                       (Screen.width/10)*2,(Screen.height/10)*1),
+			              "StageSelect")){
+				Time.timeScale = 0;
+				Debug.Log("ステージセレクトに遷移");
+				bookmanager.StateChange(new StageSelectState(bookmanager));
+			}
 		}
 	}
 }

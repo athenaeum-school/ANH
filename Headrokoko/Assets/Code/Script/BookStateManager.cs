@@ -9,7 +9,8 @@ public class BookStateManager : MonoBehaviour {
 	//背景のテクスチャ
 	public Texture2D MenuTex;
 	public Texture2D BookBackgroundTex;
-
+	public Texture2D StageSelectTex;
+	
 	//図鑑の各解説ページに遷移するためのボタンに使用するテクスチャ
 	public Texture2D[] MonsterTex;
 
