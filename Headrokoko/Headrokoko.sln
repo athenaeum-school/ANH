@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{331F2738-A5CA-3930-2047-6BA026B8C070}") = "Headrokoko", "Assembly-CSharp.csproj", "{68751649-0AC9-62F6-A1FF-94AC3EE743AF}"
 EndProject
+Project("{331F2738-A5CA-3930-2047-6BA026B8C070}") = "Headrokoko", "Assembly-CSharp-Editor.csproj", "{8D001EA5-6191-81F9-82F2-8D5CCBEF3088}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{68751649-0AC9-62F6-A1FF-94AC3EE743AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68751649-0AC9-62F6-A1FF-94AC3EE743AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68751649-0AC9-62F6-A1FF-94AC3EE743AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D001EA5-6191-81F9-82F2-8D5CCBEF3088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D001EA5-6191-81F9-82F2-8D5CCBEF3088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D001EA5-6191-81F9-82F2-8D5CCBEF3088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D001EA5-6191-81F9-82F2-8D5CCBEF3088}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-						GlobalSection(MonoDevelopProperties) = preSolution
+										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

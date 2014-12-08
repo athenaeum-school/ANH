@@ -8,6 +8,7 @@ namespace Assets.Code.States{
 		
 		
 		private BookStateManager bookmanager;
+		private int monsterNum;
 		
 		public BookState(BookStateManager Bmanager){
 			bookmanager = Bmanager;
@@ -54,7 +55,7 @@ namespace Assets.Code.States{
 				if(GUI.Button(new Rect((Screen.width/10)*1,(Screen.height/10)*2,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				              bookmanager.MonsterTex[0])){
-					bookmanager.StateChange(new Pet1Explanation(bookmanager));
+					bookmanager.StateChange(new Pet1Explanation(bookmanager,0));
 				}
 			}
 			else if(!bookmanager.MonsterLock[0]){	
@@ -68,7 +69,7 @@ namespace Assets.Code.States{
 				if(GUI.Button(new Rect((Screen.width/10)*4,(Screen.height/10)*2,
 			                       (Screen.width/10)*2,(Screen.height/10)*2),
 			              bookmanager.MonsterTex[1])){
-					bookmanager.StateChange(new Pet2Explanation(bookmanager));
+					bookmanager.StateChange(new Pet1Explanation(bookmanager,1));
 				}
 			}
 			else if(!bookmanager.MonsterLock[1]){	
@@ -82,7 +83,7 @@ namespace Assets.Code.States{
 				if(GUI.Button(new Rect((Screen.width/10)*7,(Screen.height/10)*2,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				                   bookmanager.MonsterTex[2])){
-					bookmanager.StateChange(new Pet3Explanation(bookmanager));
+					bookmanager.StateChange(new Pet1Explanation(bookmanager,2));
 				}
 			}
 			else if(!bookmanager.MonsterLock[2]){	
@@ -96,7 +97,7 @@ namespace Assets.Code.States{
 				if(GUI.Button(new Rect((Screen.width/10)*1,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				                   bookmanager.MonsterTex[3])){
-					bookmanager.StateChange(new Pet4Explanation(bookmanager));
+					bookmanager.StateChange(new Pet1Explanation(bookmanager,3));
 				}
 			}
 			else if(!bookmanager.MonsterLock[3]){	
@@ -110,7 +111,7 @@ namespace Assets.Code.States{
 				if(GUI.Button(new Rect((Screen.width/10)*4,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				                   bookmanager.MonsterTex[4])){
-					bookmanager.StateChange(new Pet5Explanation(bookmanager));
+					bookmanager.StateChange(new Pet1Explanation(bookmanager,4));
 				}
 			}
 			else if(!bookmanager.MonsterLock[4]){	
@@ -124,7 +125,7 @@ namespace Assets.Code.States{
 				if(GUI.Button(new Rect((Screen.width/10)*7,(Screen.height/10)*5,
 				                       (Screen.width/10)*2,(Screen.height/10)*2),
 				                   bookmanager.MonsterTex[5])){
-					bookmanager.StateChange(new Pet6Explanation(bookmanager));
+					bookmanager.StateChange(new Pet1Explanation(bookmanager,5));
 				}
 			}
 			else if(!bookmanager.MonsterLock[5]){	
