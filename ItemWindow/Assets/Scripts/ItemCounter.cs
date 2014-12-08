@@ -18,7 +18,7 @@ public class ItemCounter : MonoBehaviour
 	}
 
 	public void LabelOneIncrement(){
-			label[1].text = ClickCounter() + "/99";
+		label[1].text = ClickCounter() + "/99";
 	}
 
 	public string ClickCounter(){
