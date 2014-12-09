@@ -1,47 +1,69 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
+
+[RequireComponent(typeof(UIButton))]
 public class ItemCounter : MonoBehaviour
 {
-	private UILabel[] label;
 	private int count = 0;
+	//押しっぱなし判定間隔
+	public float intervalAction = 0.1f;
+	public bool callActionFirstPress;
+	float nextTime = 0f;
+	public UILabel Label;
+	public bool pressed { get; private set; }
 
-
-	void Start ()
+	
+	void Update ()
 	{
-		label = new UILabel[2];
-		GetLabelComponent ();
+		Pressing ();
 	}
 	
-	public void LabelZeroIncrement(){	
-		label[0].text = ClickCounter() + "/99";
+
+	void OnPress (bool pressed)
+	{
+		this.pressed = pressed;
+		SetNextTime ();
+		//if(pressed && callActionFirstPress)
+			//Debug.Log("Pressing");
 	}
 
-	public void LabelOneIncrement(){
-		label[1].text = ClickCounter() + "/99";
+	public void LabelIncrement(){	
+		ClickCounter (this.Label);
 	}
 
-	public string ClickCounter(){
+	public void ClickCounter(UILabel label){
 		++count;
 		int i;
 		for(i = 0; i < count; i++) {
+			label.text = i.ToString() + "/99";
 			if(gThanCount(i)) 
-			break; 
+				break; 
 		}
-		return i.ToString();
 	}
 
+	public void Pressing(){
+		if (pressed && IsLessThanTime()) {
+			SetNextTime();
+			ClickCounter(this.Label);
+		}
+	}
+
+	public void SetNextTime(){
+		nextTime = Time.realtimeSinceStartup + intervalAction;
+	}
+	
+	public bool IsLessThanTime(){
+		if(nextTime < Time.realtimeSinceStartup)
+			return true;
+		return false;
+	}
+	
 	public bool gThanCount(int i){
 		if(i >= 99)
 			return true;
 		return false;
 	}
-
-	public void GetLabelComponent(){
-		label[0] = GameObject.Find("Label_Count_0").GetComponent<UILabel>();
-		label[1] = GameObject.Find("Label_Count_1").GetComponent<UILabel>();
-	}
-
-
 
 }
