@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ItemCounter.cs">
     <Files>
       <File FileName="Assets\NGUI\Scripts\Interaction\UIButtonColor.cs" Line="128" Column="3" />
-      <File FileName="Assets\Scripts\ItemCounter.cs" Line="31" Column="55" />
+      <File FileName="Assets\Scripts\ItemCounter.cs" Line="21" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -24,8 +24,17 @@ public class ItemCounter : MonoBehaviour
 	public string ClickCounter(){
 		++count;
 		int i;
-		for(i = 0; i < count; i++) {}
+		for(i = 0; i < count; i++) {
+			if(gThanCount(i)) 
+			break; 
+		}
 		return i.ToString();
+	}
+
+	public bool gThanCount(int i){
+		if(i >= 99)
+			return true;
+		return false;
 	}
 
 	public void GetLabelComponent(){
