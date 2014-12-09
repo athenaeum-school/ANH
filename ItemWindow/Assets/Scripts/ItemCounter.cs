@@ -13,7 +13,7 @@ public class ItemCounter : MonoBehaviour
 	float nextTime = 0f;
 	public UILabel Label;
 	public bool pressed { get; private set; }
-
+	public bool dragged { get; private set; }
 	
 	void Update ()
 	{
@@ -27,6 +27,21 @@ public class ItemCounter : MonoBehaviour
 		SetNextTime ();
 		//if(pressed && callActionFirstPress)
 			//Debug.Log("Pressing");
+	}
+
+	void OnDrag(Vector2 delta){
+		CheckDragged (delta);
+	}
+
+	void CheckDragged(Vector2 delta){
+		if(delta != null)
+			SetDragged(true);
+		else
+			SetDragged(false);
+	}
+
+	void SetDragged(bool flg){
+		this.dragged = flg;
 	}
 
 	public void LabelIncrement(){	
@@ -44,7 +59,7 @@ public class ItemCounter : MonoBehaviour
 	}
 
 	public void Pressing(){
-		if (pressed && IsLessThanTime()) {
+		if (pressed && !dragged && IsLessThanTime()) {
 			SetNextTime();
 			ClickCounter(this.Label);
 		}
