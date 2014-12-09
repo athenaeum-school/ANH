@@ -7,7 +7,7 @@ using System;
 public class ItemCounter : MonoBehaviour
 {
 	private int count = 0;
-	//押しっぱなし判定間隔
+	//押しっぱなし判定の間隔
 	public float intervalAction = 0.1f;
 	public bool callActionFirstPress;
 	float nextTime = 0f;
@@ -59,7 +59,7 @@ public class ItemCounter : MonoBehaviour
 	}
 
 	public void Pressing(){
-		if (pressed && !dragged && IsLessThanTime()) {
+		if (pressed && IsNotDragWithTime()) {
 			SetNextTime();
 			ClickCounter(this.Label);
 		}
@@ -68,7 +68,13 @@ public class ItemCounter : MonoBehaviour
 	public void SetNextTime(){
 		nextTime = Time.realtimeSinceStartup + intervalAction;
 	}
-	
+
+	public bool IsNotDragWithTime(){
+		if(!dragged && IsLessThanTime())
+			return true;
+		return false;
+	}
+
 	public bool IsLessThanTime(){
 		if(nextTime < Time.realtimeSinceStartup)
 			return true;
