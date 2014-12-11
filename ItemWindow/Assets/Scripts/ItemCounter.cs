@@ -40,12 +40,16 @@ public class ItemCounter : MonoBehaviour
 			SetDragged(false);
 	}
 
+	public UILabel GetLabel(){
+		return this.Label;
+	}
+
 	void SetDragged(bool flg){
 		this.dragged = flg;
 	}
 
 	public void LabelIncrement(){	
-		ClickCounter (this.Label);
+		ClickCounter (GetLabel());
 	}
 
 	public void ClickCounter(UILabel label){
@@ -61,7 +65,7 @@ public class ItemCounter : MonoBehaviour
 	public void Pressing(){
 		if (pressed && IsNotDragWithTime()) {
 			SetNextTime();
-			ClickCounter(this.Label);
+			ClickCounter(GetLabel());
 		}
 	}
 
