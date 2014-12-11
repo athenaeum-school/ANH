@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Scripts\UI\UIInput.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\ItemWindow\Assets\Scripts\ItemCounter.cs">
     <Files>
-      <File FileName="Assets\NGUI\Scripts\UI\UIInput.cs" Line="359" Column="6" />
+      <File FileName="..\ItemWindow\Assets\Scripts\ItemCounter.cs" Line="52" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
