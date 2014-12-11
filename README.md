@@ -1,10 +1,13 @@
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
 <img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">クリエイティブ・コモンズ 表示 - 非営利 - 改変禁止 4.0 国際 ライセンスの下に提供されています。</a>
 
-#スラ育～スライム～
+#（悲報）俺氏スライムを当てる（リセマラ不可）
 
-最弱のスライムを最強に育てよう！
-所詮スライムなのでパズルでスライムを補助してね！
+パズスラ～ドラゴンが良かった～
+パズルとスライム育成のコラボレーションゲームです。
+これも何かの運命ですので、最弱のスライムを最強に育てよう！
+
+所詮スライムなので君のパズル力でスライムを補助してね！
 
 ===
 ####ゲーム概要
