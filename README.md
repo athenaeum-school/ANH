@@ -25,3 +25,6 @@
 
 
 <a href="url"><img src="https://github.com/athenaeum-school/ANH/blob/master/Headrokoko/MonsterBookflow.png" align="left" height="1150" width="800" ></a>
+
+![image](ItemWindow/遷移図/アイテムウィンドウ遷移図.jpg)
+![image](ItemWindow/遷移図/ショップ遷移図.jpg)
