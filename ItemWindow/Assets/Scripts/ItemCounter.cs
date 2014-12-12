@@ -14,7 +14,12 @@ public class ItemCounter : MonoBehaviour
 	public UILabel Label;
 	public bool pressed { get; private set; }
 	public bool dragged { get; private set; }
-	
+
+
+	void Start(){
+		InitCounter (Label);
+	}
+
 	void Update ()
 	{
 		Pressing ();
@@ -52,6 +57,12 @@ public class ItemCounter : MonoBehaviour
 		ClickCounter (GetLabel());
 	}
 
+	//現在の所持数を表示
+	public void InitCounter(UILabel label){
+		label.text = "5" + " /10";
+	}
+
+	//タッチで使用数を増加
 	public void ClickCounter(UILabel label){
 		++count;
 		int i;
@@ -61,7 +72,7 @@ public class ItemCounter : MonoBehaviour
 				break; 
 		}
 	}
-
+	
 	public void Pressing(){
 		if (pressed && IsNotDragWithTime()) {
 			SetNextTime();
