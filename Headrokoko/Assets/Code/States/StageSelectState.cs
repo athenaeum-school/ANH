@@ -19,6 +19,10 @@ namespace Assets.Code.States{
 
 		public void Render(){
 			GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height),bookmanager.StageSelectTex,ScaleMode.StretchToFill);
+
+			if(GUI.Button(new Rect(Input.mousePosition.x,Screen.height/10*1
+			                       ,Screen.width/10*2, Screen.height/10*1),"Test")){
+			}
 			if(GUI.Button(new Rect((Screen.width/10) * 1,(Screen.height/10) * 4,(Screen.width/10) * 2,(Screen.height/10) * 1),"Stage1")){
 				Application.LoadLevel("Stage1");
 				Debug.Log("ステージ１");
