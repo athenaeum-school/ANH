@@ -36,7 +36,8 @@ namespace Assets.Code.States{
 			              "StageSelect")){
 				Time.timeScale = 0;
 				Debug.Log("ステージセレクトに遷移");
-				bookmanager.StateChange(new StageSelectState(bookmanager));
+				//bookmanager.StateChange(new StageSelectState(bookmanager));
+				Application.LoadLevel("StageSlerectScene");
 			}
 		}
 	}

@@ -40,8 +40,13 @@ public class SlideButton : MonoBehaviour {
 
 	void OnDrag(Vector2 delta){
 		Debug.Log("drag");
+		Debug.Log(delta);
 		dragbool = true;
 		EndPos = Input.mousePosition;
+		if(delta.x > 20){
+			Debug.Log("next state");
+			Application.LoadLevel(stagename);
+		}
 	}
 
 	void OnClick(){
